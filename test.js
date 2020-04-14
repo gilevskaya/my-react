@@ -1,8 +1,15 @@
-import Vue from "https://unpkg.com/vue@2.6.11/dist/vue.esm.browser.min.js";
+System.register(["vue"], () => {
+  let Vue;
 
-new Vue({
-  el: "#root",
-  data: {
-    age: "123",
-  },
+  return {
+    setters: [(v) => (Vue = v.default)],
+    execute() {
+      new Vue({
+        el: "#root",
+        data: {
+          age: "123",
+        },
+      });
+    },
+  };
 });
