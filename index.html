@@ -3,21 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <title>ReReact Demo</title>
-    <script type="systemjs-importmap">
-      {
-        "imports": {
-          "vue": "https://unpkg.com/vue@2.6.11/dist/vue.min.js"
-        }
-      }
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/6.3.0/system.min.js"></script>
   </head>
 
   <body>
-    <div id="root">
-      age is {{age}}
-    </div>
-    <!-- <script src="index.js"></script> -->
-    <script type="systemjs-module" src="test.js"></script>
+    <div id="root" />
+    <script type="module" src="dist/index.js"></script>
   </body>
 </html>
