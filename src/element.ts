@@ -4,7 +4,7 @@ export type Node = Element | Text;
 
 export type Props = {
   children?: Node[];
-  [prop: string]: any;
+  [key: string]: any;
 };
 
 export type Element =
@@ -36,7 +36,7 @@ export function createElement(
   };
 }
 
-export function createTextElement(text: Text): Element {
+function createTextElement(text: Text): Element {
   return {
     type: "TEXT_ELEMENT",
     props: {
